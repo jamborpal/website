@@ -6,7 +6,7 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    navigate('/about');
+    navigate('website/about');
   }, []);
 
   return (
@@ -15,16 +15,16 @@ const Navbar = () => {
         <Bars />
 
         <NavMenu>
-          <NavLink to="/about" activeStyle>
+          <NavLink to="/website/about" activeStyle>
             About
           </NavLink>
-          <NavLink to="/workexperience" activeStyle>
+          <NavLink to="/website/workexperience" activeStyle>
             Work Experience
           </NavLink>
-          <NavLink to="/projects" activeStyle>
+          <NavLink to="/website/projects" activeStyle>
             Projects
           </NavLink>
-          <NavLink to="/studies" activeStyle>
+          <NavLink to="/website/studies" activeStyle>
             Studies
           </NavLink>
         </NavMenu>
