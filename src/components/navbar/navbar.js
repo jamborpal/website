@@ -1,30 +1,23 @@
 import React from 'react';
-import {
-  Nav,
-  NavLink,
-  Bars,
-  NavMenu,
-  NavBtn,
-  NavBtnLink,
-} from './NavbarElements';
-  
+import { Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink } from './NavbarElements';
+
 const Navbar = () => {
   return (
     <>
       <Nav>
         <Bars />
-  
+
         <NavMenu>
-          <NavLink to='/about' activeStyle>
+          <NavLink exact to="/about" activeStyle>
             About
           </NavLink>
-          <NavLink to='/workexperience' activeStyle>
+          <NavLink to="/workexperience" activeStyle>
             Work Experience
           </NavLink>
-          <NavLink to='/projects' activeStyle>
+          <NavLink to="/projects" activeStyle>
             Projects
           </NavLink>
-          <NavLink to='/studies' activeStyle>
+          <NavLink to="/studies" activeStyle>
             Studies
           </NavLink>
         </NavMenu>
@@ -32,5 +25,5 @@ const Navbar = () => {
     </>
   );
 };
-  
+
 export default Navbar;
